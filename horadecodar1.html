@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição Gabriel</title>
+</head>
+<body>
+    <script>
+        // Exercicio 1
+        var nome_do_carro = "Fusca";
+        alert(nome_do_carro);
+
+        //Exercício 2
+        var NomeDoUsuario = prompt("Digite seu nome: ")
+        alert("Olá, "+NomeDoUsuario)
+
+        //Exercício 3
+        var NomeDoUsuario = prompt("Digite seu nome: ")
+        var idade = prompt("Digite sua idade: ")
+
+        alert("Olá, " + NomeDoUsuario + ", sua idade é " + idade)
+
+        // Exercício 4
+
+        var figuraEscolhida = prompt("Escreva o nome da figura cuja área deverá ser calculada: ")
+
+        if(figuraEscolhida == "quadrado"){
+            var num1 = Number(prompt("Digite o valor do lado do quadrado: "))
+            alert("A área deste quadrado é: " + num1**2)
+        }
+        else if(figuraEscolhida == "retangulo"){
+            var num1 = Number(prompt("Digite o valor da base do retângulo: "))
+            var num2 = Number(prompt("Digite o valor da altura do retângulo: "))
+            alert("A área deste retângulo é: " + num1*num2)
+        }
+        else if(figuraEscolhida == "losango"){
+            var num1 = Number(prompt("Digite o valor da diagonal menor do losango: "))
+            var num2 = Number(prompt("Digite o valor da diagonal maior: "))
+            alert("A área deste losango é: " + num1*num2/2)
+        }
+        else if(figuraEscolhida == "trapezio"){
+            var num1 = Number(prompt("Digite o valor da base menor do trapezio: "))
+            var num2 = Number(prompt("Digite o valor da base maior: "))
+            var num3 = Number(prompt("digite o valor da altuta do trapézio"))
+            alert("A área deste trapezio é: " + (num1+num2)*num3/2)
+        }
+        else if(figuraEscolhida == "paralelogramo"){
+            var num1 = Number(prompt("Digite o valor da base do paralelogramo: "))
+            var num2 = Number(prompt("digite o valor da altura do paralelogramo: "))
+            alert("A área deste paralelogramo é: " + num1*num2)
+        }
+        else if(figuraEscolhida == "triangulo"){
+            var num1 = Number(prompt("Digite o valor da base do triangulo: "))
+            var num2 = Number(prompt("Digite o valor da altura do triangulo: "))
+            alert("A área deste triangulo é: " + num1*num2/2)
+        }
+        else if(figuraEscolhida == "circulo"){
+            var num1 = Number(prompt("digite o valor do raio do circulo"))
+            alert("A área do círculo vale "+ num1**2*3.14)
+        }
+        else(alert("ain"))
+
+    </script>
+</body>
+</html>
