@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //hora de codar 2
+        //ex 1
+        num1 = prompt("digite um numero: ")
+        num2 = prompt("digite outro numero: ")
+        if(num1 > num2){
+            alert(num1)
+        }else{
+            alert(num2)
+        }
+
+        //ex 2
+        num = prompt("digite um numero: ")
+        if(num > 0){
+            alert("seu numero é positivo")
+        }else if(numero = 0){
+            alert("seu numero é zero")
+        }else{
+            alert("seu numero é negativo")
+        }
+        
+        //ex 3
+        num1 = prompt("digite um numero: ")
+        num2 = prompt("digite um numero: ")
+        num3 = prompt("digite um numero: ")
+        listanumeros = [num1, num2, num3]
+        listanumeros.sort()
+        alert(listanumeros[2])
+
+        //ex 4
+        num1 = Number(prompt("digite um numero: "))
+        num2 = Number(prompt("digite um numero: "))
+        num3 = Number(prompt("digite um numero: "))
+        listanumeros = [num1, num2, num3]
+        listanumeros.sort()
+        alert(listanumeros[2] + listanumeros[1])
+
+        //ex 5
+        let listanumeros = []
+
+        for(i=0;i<6;i++){
+            num = Number(prompt("digite um numero: "))
+            listanumeros.push(num)
+        }
+        soma = listanumeros.reduce((acc, atual) => acc + atual, 0)
+        alert(soma / listanumeros.length)
+
+        //ex 6
+        listanumeros = []
+        listanumeros.clear
+
+        for(i=0;i<4;i++){
+            num = Number(prompt("digite um numero: "))
+            listanumeros.push(num)
+        }
+        alert(listanumeros[0])
+        alert(listanumeros[1])
+        listanumeros.sort()
+        alert(listanumeros[3])
+
+        //ex 7
+        listanumeros = []
+        listadosescolhidos = []
+
+        for(i=0;i<6;i++){
+            num = Number(prompt("digite um numero: "))
+            listanumeros.push(num)
+            if(num < 72){
+                listadosescolhidos.push(num)
+                soma = listadosescolhidos.reduce((acc, atual) => acc + atual, 0)
+            }
+            
+        }
+        alert("a soma dos valores escolhidos é de " + soma)
+        alert("os valores informados são " + listanumeros)
+
+        //ex 8
+        let soma = 0
+
+        for(let i = 0; i < 4; i++){
+            let num = Number(prompt("digite um número entre 0 e 10: "))
+
+            if(num > 0 && num < 10){
+                soma = soma + num
+            }else{
+                alert("numero invalido")
+                i--
+            }
+        }
+
+        let media = soma / 4
+
+        if(media > 5){
+            alert("voce passou no teste")
+        }else{
+            alert("tente novamente")
+        }
+
+        //ex 9
+        let num = Number(prompt("digite seu ano de nascimento "))
+        let idade = 2026 - num
+        if(idade >= 16 && idade < 110){
+            alert("voce pode votar")
+        }else if(idade > 110){
+            alert("voce esta morto")
+        }else{
+            alert("voce nao pode votar")
+        }
+
+        //ex 10
+        let altura = Number(prompt("digite sua altura: "))
+        let genero = Number(prompt("digite o gênero (1 = feminino 2 = masculino): "))
+
+        let pesoIdeal = 0
+
+        if(genero == 1){
+            pesoIdeal = (62.1 * altura) - 44.7
+        }else if(genero == 2){
+            pesoIdeal = (72.7 * altura) - 58
+        }else{
+            alert("genero invalido")
+        }
+
+        alert("seu peso ideal é: " + pesoIdeal)
+
+        //ex 11
+        let valor1 = Number(prompt("digite o primeiro valor"))
+        let valor2 = Number(prompt("digite o segundo valor"))
+        let operacao = Number(prompt("digite a operacao: 1 adicao, 2 subtracao, 3 divisao, 4 multiplicacao"))
+
+        let resultado
+
+        if(operacao == 1){
+            resultado = valor1 + valor2
+        }else if(operacao == 2){
+            resultado = valor1 - valor2
+        }else if(operacao == 3){
+            resultado = valor1 / valor2
+        }else if(operacao == 4){
+            resultado = valor1 * valor2
+        }
+
+        alert("resultado é: " + resultado)
+
+    </script>
+</body>
+</html>
