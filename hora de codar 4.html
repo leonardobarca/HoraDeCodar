@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exercicio 1
+
+        var estudantes = []
+        var nome = ""
+
+        while(nome != "PARE"){
+            nome = prompt("digite o nome do estudante ou PARE para sair")
+            if(nome != "PARE"){
+                estudantes.push(nome)
+            }
+        }
+
+        alert("quantidade de estudantes é: " + estudantes.length)
+        for(var i=0;i<estudantes.length;i++){
+            console.log(estudantes[i])
+        }
+
+        //exercicio 2
+        var planetas = ["terra","marte","plutão","vênus","júpiter","saturno"]
+        var nome = prompt("digite o nome de um planeta")
+        if(planetas.includes(nome.toLowerCase())){
+            alert("planeta encontrado")
+        }else{
+            alert("planeta nao encontrado")
+        }
+
+        //exericio 3
+        var frutas = ["maça","banana","laranja","uva","manga"]
+        while(frutas.length > 0){
+            alert("frutas: " + frutas)
+            var nome = prompt("digite o nome de uma fruta")
+            var indice = frutas.indexOf(nome) //demorei nessa parte
+            if(indice != -1){
+                frutas.splice(indice,1)
+                alert("fruta foi retirada da lista")
+            }else{
+                alert("fruta indisponivel no mercado")
+            }
+        }
+        alert("lista de compras finalizada")
+    </script>
+</body>
+</html>
